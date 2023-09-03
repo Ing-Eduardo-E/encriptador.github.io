@@ -1,0 +1,202 @@
+* {
+  background: #c9d3fa;
+  font-family: "Inter";
+  color: #343a40;
+  font-weight: bold;
+  font-size: 8px;
+}
+
+/* Estilos para el contenedor */
+.container {
+  display: block;
+  margin: 2%;
+}
+
+/* Estilos para el contenido principal */
+.container__main {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para el encabezado */
+.container__header {
+  margin: 0;
+}
+
+/* Estilos para el logo */
+.header__logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Estilos para la sección */
+.main__section {
+  display: block;
+  align-items: center;
+  margin: 0;
+}
+
+/* Estilos para el área de texto */
+.section__textarea {
+  width: 100%;
+  height: 10rem;
+  margin-top: 2rem;
+  margin-right: auto;
+  font-size: 32px;
+  color: #0a3871;
+  border: none;
+}
+
+.section__textarea::placeholder {
+  color: #0a3871;
+}
+
+/* Estilos para la información */
+.section__informacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* Estilos para la imagen de advertencia */
+.informacion__img {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+/* Estilos para el texto de advertencia */
+.informacion__advertencia {
+  font-size: 8px;
+  color: #495057;
+}
+
+/* Estilos para los botones */
+.section__botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Estilos para el botón de encriptar */
+.botones__btn-encriptar {
+  width: 100%;
+  height: 70px;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  background-color: #0a3871;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Estilos para el botón de desencriptar */
+.botones__btn-desencriptar {
+  width: 100%;
+  height: 70px;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  border: 1px solid #0a3871;
+  font-size: 16px;
+  color: #0a3871;
+}
+
+.botones__btn-desencriptar:hover,
+.botones__btn-encriptar:hover {
+  background-color: #024736;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+.main__section--descencriptar {
+  display: inline-block;
+  border-radius: 20px;
+  background-color: white;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.section__img{
+  display: none;
+}
+
+.section__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font: bold 2rem/1 Inter;
+  text-align: center;
+  margin: 6rem 0.5rem 0.5rem;
+}
+
+/* Estilos para el área de mensaje */
+.section__mensaje {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+}
+
+/* Responsive design */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Estilos para los botones */
+  .section__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* Estilos para el botón de encriptar */
+  .botones__btn-encriptar {
+    width: 332px;
+  }
+
+  /* Estilos para el botón de desencriptar */
+  .botones__btn-desencriptar {
+    width: 332px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  /* Estilos para el área de texto */
+  .section__textarea {
+    width: 800px;
+    height: 500px;
+  }
+
+  .section__img{
+    display: block;
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .section__title {
+    margin-top: 0.5rem;
+  }
+}
