@@ -194,6 +194,7 @@
     width: 350px;
     height: 400px;
     margin: 0 auto;
+    z-index: 999;
   }
 
   .section__title {
